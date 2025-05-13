@@ -11,14 +11,14 @@ class SubjectList:
 
     def add_subject(self):
         name = input("Enter subject name: ")
-        year_level = input("Enter year level: ")
-        class_code = input("Enter class code: ")
+        year_level = int(input("Enter year level: "))
+        class_code = int(input("Enter class code: "))
         num_students = int(input("Enter number of students in the class: "))
 
         self.subjects.append(Subject(name, year_level, class_code, num_students))
         print("\nSubject added.\n")
         return
-    
+
     def view_subjects(self):
         subject_name = input("What subject would you like to view? ")
 
@@ -35,12 +35,13 @@ class SubjectList:
                 break
         else:
             print("\nSubject not found. Please try again.\n")
+            return
 
     def print_all_subjects(self):
         if not self.subjects:
             print("\nNo subjects have been added.\n")
             return
-        
+
         print("\nAll Subjects:\n")
         for subject in self.subjects:
             print(f"Subject: {subject.name}\nYear Level: {subject.year_level}\nClass Code: {subject.class_code}\nNumber of Students: {subject.num_students}\n")
