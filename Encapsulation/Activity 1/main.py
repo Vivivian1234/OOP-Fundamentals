@@ -30,7 +30,6 @@ def main():
         else:
             print("Invalid option. Please try again.")
 
-        # Print updated account info
         print(f'\nAccount Number: {user_account.get_account_number()}')
         print(f'Balance Number: ${user_account.get_balance()}')
         print(f'Owner name: {user_account.get_name()}\n')
