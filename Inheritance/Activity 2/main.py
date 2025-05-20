@@ -1,5 +1,7 @@
 from weapons import Weapon, Sword, Bow, Longbow, Shortbow
 
+weapon_list = Weapon
+
 # Creating instances
 basic_sword = Sword("Excalibur", 50, "Slashing")
 basic_bow = Bow("Hunter's Bow", 30, "Piercing")

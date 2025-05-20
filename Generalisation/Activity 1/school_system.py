@@ -11,10 +11,10 @@ class Person:
     def get_age(self):
         current_year = datetime.datetime.now().year
         age = current_year - self.dob.year
-        print(f"{self.first_name} {self.surname} is {age} years old.")
+        print(f"{self.first_name} {self.surname} is {age} years old.\n")
 
     def get_details(self):
-        print(f"First Name: {self.first_name}\nSurname: {self.surname}\nDOB: {self.dob}\nSubject: {self.subject}\nEmail: {self.email}")
+        print(f"First Name: {self.first_name}\nSurname: {self.surname}\nDOB: {self.dob}\nSubject: {self.subject}\nEmail: {self.email}\n")
 
 
 
